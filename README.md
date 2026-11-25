@@ -45,6 +45,8 @@ Uma das principais características da implementação é a ausência de depend�
 - **Conversão de texto em fala:** transforma o conteúdo digitado pelo usuário em áudio.
 - **Seleção de vozes:** permite utilizar as vozes disponibilizadas pelo navegador.
 - **Carregamento dinâmico:** identifica as vozes disponíveis durante a execução.
+- **Interface responsiva:** adapta o conversor para telas de computadores e dispositivos móveis.
+- **Controles de reprodução:** acompanha o texto digitado e permite iniciar ou interromper a leitura.
 - **Interação com o usuário:** captura e processa os dados informados na interface.
 - **Manipulação dinâmica da interface:** atualização dos elementos HTML conforme as opções disponíveis.
 
@@ -144,7 +146,7 @@ Algumas funcionalidades que podem ser exploradas em versões futuras:
 - [ ] Botão para pausar e retomar a reprodução.
 - [ ] Botão para interromper a síntese de voz.
 - [ ] Filtros de idioma e seleção de vozes.
-- [ ] Interface responsiva para dispositivos móveis.
+- [x] Interface responsiva para dispositivos móveis.
 - [ ] Histórico de textos utilizados.
 - [ ] Melhorias de acessibilidade.
 
