@@ -32,7 +32,7 @@ async function loadVoices() {
         );
         voiceSelect.disabled = false;
         button.disabled = false;
-        statusMessage.textContent = "Vozes em português carregadas. Pronto para gerar a fala.";
+        statusMessage.textContent = "Vozes carregadas. Escreva seu texto e clique em ouvir.";
     } catch (error) {
         voiceSelect.innerHTML = "<option>Falha ao carregar vozes</option>";
         statusMessage.textContent =

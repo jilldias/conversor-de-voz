@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#080d18">
-    <meta name="description" content="Transforme seu texto em voz com as vozes disponíveis no navegador.">
+    <meta name="description" content="Transforme seu texto em voz usando a API de síntese de fala da Puter.">
     <title>Voz — Conversor de texto em fala</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <script src="https://js.puter.com/v2/"></script>
-    <script src="code.js" defer></script>
+    <script src="src/js/code.js" defer></script>
 </head>
 <body>
     <main class="app-shell">
@@ -19,32 +19,29 @@
                         <path d="M4 10v4m4-8v12m4-16v20m4-16v12m4-8v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
-                <span>voz<span class="brand-dot">.</span></span>
             </a>
             <span class="topbar-label"><span class="status-dot"></span> CONVERSOR DE TEXTO EM FALA</span>
         </header>
 
         <section class="workspace" aria-labelledby="page-title">
             <div class="intro">
-                <span class="eyebrow">SUA IDEIA, EM VOZ ALTA</span>
                 <h1 id="page-title">Dê voz às suas <span>palavras.</span></h1>
                 <p>Escreva ou cole um texto, escolha uma voz e ouça a leitura.</p>
             </div>
 
             <section class="converter" aria-label="Conversor de texto em fala">
                 <div class="field-heading">
-                    <label for="txt">Seu texto</label>
-                    <span class="field-hint">Digite ou cole o conteúdo para ouvir</span>
+                    <label for="txt">Digite seu texto:</label>
                 </div>
                 <textarea id="txt" placeholder="Era uma vez uma ideia que merecia ser ouvida..." aria-describedby="character-count" spellcheck="true"></textarea>
                 <div class="editor-footer">
-                    <span class="editor-tip"><span aria-hidden="true">↵</span> Sua voz começa aqui</span>
+                    <span class="editor-tip"><span aria-hidden="true">↵</span></span>
                     <span id="character-count">0 caracteres</span>
                 </div>
 
                 <div class="controls">
                     <div class="voice-control">
-                        <label for="sel">Voz</label>
+                        <label for="sel">Escolha uma voz:</label>
                         <div class="select-wrap">
                             <svg class="voice-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                 <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Z" stroke="currentColor" stroke-width="1.7"/>
@@ -57,7 +54,6 @@
                                 <path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <span class="voice-note">Vozes de português disponíveis na Puter</span>
                     </div>
                     <button id="but" type="button" disabled>
                         <svg class="play-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -70,7 +66,6 @@
             </section>
 
             <footer class="page-footer">
-                <span>Simples assim. Só texto e voz.</span>
                 <span class="footer-divider" aria-hidden="true"></span>
                 <span>Feito para ser ouvido.</span>
                 <span class="footer-divider" aria-hidden="true"></span>
